@@ -1,0 +1,52 @@
+.tweet {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.content {
+  flex: 1;
+}
+
+.avatar {
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.actions {
+  display: flex;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.actions li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.handle,
+.time {
+  color: #657786;
+}
+
+.handle::after {
+  content: ' \00b7';
+}
+
+.actions button {
+  border: none;
+  color: #657786;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.actions button:hover {
+  color: #1da1f2;
+}
